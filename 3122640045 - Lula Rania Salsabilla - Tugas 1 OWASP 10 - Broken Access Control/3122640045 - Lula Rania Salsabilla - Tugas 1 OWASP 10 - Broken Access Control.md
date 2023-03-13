@@ -1,134 +1,262 @@
-﻿**Instalasi OWASP Juice Shop  Praktikum Keamanan Jaringan** 
+> **Instalasi OWASP Juice Shop Praktikum Keamanan Jaringan**
 
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.001.png)
+![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image1.png){width="3.1777777777777776in"
+height="3.0416666666666665in"}
 
-Dosen Pembimbing :  
+Dosen Pembimbing :
 
-Dr. Ferry Astika Saputra, ST., M.Sc. 
+> Dr. Ferry Astika Saputra, ST., M.Sc.
 
-Disusun Oleh : 
+Disusun Oleh :
 
-Lula Rania Salsabilla (3122640045) 
+Lula Rania Salsabilla (3122640045)
 
-**1 D4 – IT B LJ** 
+**1 D4 -- IT B LJ**
 
-**D4 TEKNIK INFORMATIKA** 
+**D4 TEKNIK INFORMATIKA**
 
-**DEPARTEMEN TEKNIK INFORMATIKA DAN KOMPUTER POLITEKNIK ELEKTRONIKA NEGERI SURABAYA** 
+**DEPARTEMEN TEKNIK INFORMATIKA DAN KOMPUTER**
 
-**2023** 
+> **POLITEKNIK ELEKTRONIKA NEGERI SURABAYA**
 
-**Broken Access Control** 
+**2023**
 
-- **Informasi Dasar** 
+**Broken Access Control**
 
-**Deskripsi :** Penyerang dan peretas dapat mengakses sebuah sistem ketika autentikasi dan pembatasan akses tidak diterapkan dengan baik. Dengan kata lain, Broken Access Control memungkinkan entri yang tidak sah yang dapat mengakibatkan kerentanan data dan file yang bersifat sensitif. Kontrol akses yang lemah terkait manajemen kredensial dapat dihindari dengan metode coding yang unik dan tindakan khusus seperti mematikan akun administratif dan penggunaan autentikasi multi-faktor.** 
+> •**Informasi Dasar**\
+> **Deskripsi :** Penyerang dan peretas dapat mengakses sebuah sistem
+> ketika autentikasi dan pembatasan akses tidak diterapkan dengan baik.
+> Dengan kata lain, Broken Access Control memungkinkan entri yang tidak
+> sah yang dapat mengakibatkan kerentanan data dan file yang bersifat
+> sensitif. Kontrol akses yang lemah terkait manajemen kredensial dapat
+> dihindari dengan metode coding yang unik dan tindakan khusus seperti
+> mematikan akun administratif dan penggunaan autentikasi multi-faktor.
+>
+> **Target Serangan :** Semua jenis Web Server, application server, dan
+> web application rentan dan mudah untuk terkena beberapa permasalahan
+> ini. Bahkan website yang hanya bersifat statis, jika tidak diatur
+> dengan baik, dapat diretas oleh hacker, seperti akses terhadap file -
+> file penting, deface, ataupun beberapa perbuatan merusak lainnya.
+>
+> **Bagaimana cara mengetahui keamanan Access Control :** Semua website
+> dipastikan membutuhkan access control. Oleh karena itu aturan dan
+> desain nya sendiri harus secara jelas dan terdokumentasi. Jika tidak
+> ada dokumentasi hampir dipastikan, website tersebut kemungkinan besar
+> rentan. Code yang digunakan harus terstruktur, modular, dan sebagian
+> besar terpusat. Review secara mendetail terhadap code harus dilakukan
+> untuk memvalidasi keabsahan dari implementasi Access Control. Selain
+> itu melakukan test dengan cara membobol code yang digunakan juga akan
+> sangat membantu mengetahui ada atau tidaknya permasalahan pada Access
+> Control.
+>
+> •Percobaan : Mengubah Isi Keranjang User
 
-**Target Serangan :** Semua jenis Web Server, application server, dan web application rentan dan mudah untuk terkena beberapa permasalahan ini. Bahkan website yang hanya bersifat statis, jika tidak diatur dengan baik, dapat diretas oleh hacker, seperti akses terhadap file - file penting, deface, ataupun beberapa perbuatan merusak lainnya.**  
++-----------------------------------+-----------------------------------+
+| \-                                | > Setelah melakukan pengaksesan   |
+|                                   | > localhost 3000 di terminal dan  |
+|                                   | > mempersiapkan aplikasi          |
+|                                   | > burpsuite di sini, saya         |
+|                                   | > melakukan login dengan          |
+|                                   | > menggunakan akun yang sudah di  |
+|                                   | > daftarkan sebelumnya.           |
++===================================+===================================+
++-----------------------------------+-----------------------------------+
 
-**Bagaimana  cara  mengetahui  keamanan  Access  Control  :**  Semua  website dipastikan membutuhkan access control. Oleh karena itu aturan dan desain nya sendiri harus secara jelas dan terdokumentasi. Jika tidak ada dokumentasi hampir dipastikan, website tersebut kemungkinan besar rentan. Code yang digunakan harus terstruktur, modular, dan sebagian besar terpusat. Review secara mendetail terhadap code harus dilakukan untuk memvalidasi keabsahan dari implementasi Access Control. Selain itu melakukan  test  dengan  cara  membobol  code  yang  digunakan  juga  akan  sangat membantu mengetahui ada atau tidaknya  permasalahan pada Access Control.** 
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image2.png){width="5.843055555555556in"
+> height="3.1180555555555554in"}
+>
+> \- Kemudian setelah melakukan proses login disini akan di arahkan ke
+> halaman dashboard
+>
+> untuk dapat memilih beberapa item dan nantinya akan disimpan ke
+> keranjang.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image3.png){width="6.268054461942257in"
+> height="3.3361111111111112in"}
+>
+> \- Kemudian menuju halaman keranjang untuk dapat melihat yang telah
+> ditambahkan
+>
+> yaitu aple juice dan apple pomance masing masing 1 buah.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image4.png){width="6.268054461942257in"
+> height="3.3402777777777777in"}
+>
+> \- Kemudian disini saya membuka halaman proxy di dalam http history
+> untuk melihat track http history. Terdapat informasi host, method,
+> url, status, length dan informasi pendukung lainnya.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image5.png){width="6.268054461942257in"
+> height="4.252777777777778in"}
+>
+> \- Kemudian setelah itu saya pilih http history yang memiliki params
+> json dengan get /rest/basket/6. Kemudian saya lihat mengenai request
+> dan response yang tertampil di halaman tersebut. Dimana response
+> berisi informasi isi keranjang yang telah saya pilih
+>
+> sebelumnya.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image6.png){width="6.268054461942257in"
+> height="2.9569433508311462in"}
+>
+> \- Kemudian saya pindahkan list request yang saya amati sebelumnya
+> menuju repeater, kemudian saya send dan pada response terlihat data
+> keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image7.png){width="5.881944444444445in"
+> height="2.7416666666666667in"}
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image8.png){width="6.268054461942257in"
+> height="3.3541666666666665in"}
+>
+> \- Setelah melihat informasi response di repeater, saya mencoba untuk
+> mengganti data id 6 menjadi 2 untuk melihat apakah terdapat perubahan
+> yang ditampilkan response. Dan ternyata response membrikan informasi
+> berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang
+> id 2.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image9.png){width="6.268054461942257in"
+> height="3.3361111111111112in"}
+>
+> \- Kemudian disini saya akan menggunakan fitur interceot untuk
+> menampilkan data keranjang user lain di dalam website owasp juice
+> shop. Dimana saya merubah status intercept yang tadinya off menjadi
+> on.
+>
+> \-
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image10.png){width="6.268054461942257in"
+> height="3.4819444444444443in"}
+>
+> \- Ketika intercept on disini terdapat baris informasi request terkait
+> owasp juice shop. Kemudian saya foorward data tersebut hingga
+> menemukan data get /rest/basket/6, kemudian saya ganti data uiidnya
+> dengan id lain selain id 6 kemudian saya forward kembali informasi
+> tersebut.
+>
+> \-
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image11.png){width="6.268054461942257in"
+> height="2.9499989063867016in"}
+>
+> \- Website berhasil menampilkan isi keranjang pengguna lainnya berikut
+> adalah isi keranjang pengguna : id (2).
+>
+> \-
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image12.png){width="6.268054461942257in"
+> height="3.3541666666666665in"}
+>
+> \- Website berhasil menampilkan isi keranjang pengguna lainnya berikut
+> adalah isi
+>
+> keranjang pengguna : id (4).
+>
+> \-
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image13.png){width="6.268054461942257in"
+> height="3.345833333333333in"}
+>
+> \- Website berhasil menampilkan isi keranjang pengguna lainnya berikut
+> adalah isi
+>
+> keranjang pengguna : id (5).
+>
+> \-
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image14.png){width="6.268054461942257in"
+> height="3.3361111111111112in"}
+>
+> \- Disini saya sudah berhasil untuk melakukan challenge melihat
+> keranjang orang lain.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image15.png){width="6.268054461942257in"
+> height="0.8722222222222222in"}
+>
+> •Percobaan : Login Admin
+>
+> \- Disini saya bermaksud ingin mencari data email, yang mana ditemukan
+> di komentar
+>
+> ulasan. Dimana ada informasi email admin disana.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image16.png){width="6.268054461942257in"
+> height="3.138888888888889in"}
+>
+> \- Kemudian saya melakukan login dengan menggunakan password dummy,
+> namun sebelumnya
+>
+> saya melakukan perubahan status menjadi on di intercept.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image17.png){width="6.268055555555556in"
+> height="3.345833333333333in"}
+>
+> \- Ketika melakukan submit login, intercept memberikan informasi
+> berupa baris informasi yang
+>
+> mana memuat email dan password.
+>
+> \- Kemudian setelah melihat informasi tersebut, saya menggunakan ikon
+> yang dikotaki warna
+>
+> merah untuk melakukan pengiriman menuju intruder, positions.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image18.png){width="6.268055555555556in"
+> height="3.341665573053368in"}
+>
+> \- Kemudian kita berpindah ke halaman intruder, positions dan melihat
+> data informasi yang ada
+>
+> disana, kemudian klik clear. Ada penambahan beberapa data ketika
+> proses melakukan clear
+>
+> data.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image19.png){width="6.268055555555556in"
+> height="3.3361111111111112in"}
+>
+> \- Kemudian klik add, yang mana dalam hal ini akan membuat data email
+> memiliki tambahan sign dollar didepannya. Hal ini membuat adanya
+> perubahan yang ada.
+>
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image20.png){width="6.268055555555556in"
+> height="3.345833333333333in"}
+>
+> \- Proses berikutnya saya menuju ke payloads dan melakukan load data
+> file password.txt yang sebelumnya sudah dibuat.
 
-- Percobaan : Mengubah Isi Keranjang User 
-- Setelah  melakukan  pengaksesan  localhost  3000  di  terminal  dan  mempersiapkan aplikasi burpsuite di sini, saya melakukan login dengan menggunakan akun yang sudah di daftarkan sebelumnya.  
+![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image21.png){width="6.266666666666667in"
+height="2.7916666666666665in"}
 
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.002.jpeg)
+\- Setelah itu kemudian data yang diinputkan pada txt akan muncul di
+dalam kotak putih sebagai list data password, kemudian klik button start
+attack.
 
-- Kemudian setelah melakukan proses login disini akan di arahkan ke halaman dashboard untuk dapat memilih beberapa item dan nantinya akan disimpan ke keranjang. 
+![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image22.png){width="5.675in"
+height="5.508333333333334in"}
 
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.003.jpeg)
+\- Setelah itu, akan tertampil sebuah moodal yang menampilkan list
+password yang dicoba sebelumnya, dan memuat informasi status dan length
+dan data lain. Disini semua 400 hasilnya kecuali data terakhir
+"admin123" yang memiliki status 200.
 
-- Kemudian menuju halaman keranjang untuk dapat melihat yang telah ditambahkan yaitu aple juice dan apple pomance masing masing 1 buah. 
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image23.png){width="5.5055555555555555in"
+> height="2.9430555555555555in"}
 
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.004.jpeg)
+\- Kemudian saya mencoba untuk login menggunakan "admin1123" disini saya
+berhasil untuk login sebagai admin dan dapat mengakses keranjang serta
+profile dari akun admin yang ada di dalam owasp juice shop.
 
-- Kemudian disini saya membuka halaman proxy di dalam http history untuk melihat track http history. Terdapat informasi host, method, url, status, length dan informasi pendukung lainnya. 
+\-
+![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image24.png){width="6.604166666666667in"
+height="3.5194444444444444in"}
 
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.005.jpeg)
+\-
+![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image25.png){width="5.855555555555555in"
+height="3.129166666666667in"}
 
-- Kemudian setelah itu saya pilih http history yang memiliki params json dengan get /rest/basket/6. Kemudian saya lihat mengenai request dan response yang tertampil di halaman tersebut. Dimana response berisi informasi isi keranjang yang telah saya pilih 
-
-sebelumnya.
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.006.jpeg)
-
-- Kemudian saya pindahkan list request yang saya amati sebelumnya menuju repeater, kemudian saya send dan pada response terlihat data keranjang yang sudah sesuai dengan apa yang diinputkan sebelumnya. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.007.jpeg)
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.008.jpeg)
-
-- Setelah melihat informasi response di repeater, saya mencoba untuk mengganti data id 6 menjadi 2 untuk melihat apakah terdapat perubahan yang ditampilkan response. Dan ternyata response membrikan informasi berbeda dari sebelumnya yang mana ternyata menunjukkan isi keranjang id 2. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.009.jpeg)
-
-- Kemudian disini saya akan menggunakan fitur interceot untuk menampilkan data keranjang user lain di dalam website owasp juice shop. Dimana saya merubah status intercept yang tadinya off menjadi on. 
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.010.jpeg)
-- Ketika intercept on disini terdapat baris informasi request terkait owasp juice shop. 
-
-Kemudian saya foorward data tersebut hingga menemukan data get /rest/basket/6, kemudian saya ganti data uiidnya dengan id lain selain id 6 kemudian saya forward kembali informasi tersebut. 
-
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.011.jpeg)
-- Website  berhasil  menampilkan  isi  keranjang  pengguna  lainnya  berikut  adalah  isi 
-
-keranjang pengguna : id  (2). 
-
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.012.jpeg)
-- Website  berhasil  menampilkan  isi  keranjang  pengguna  lainnya  berikut  adalah  isi 
-
-keranjang pengguna : id  (4). 
-
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.013.jpeg)
-- Website  berhasil  menampilkan  isi  keranjang  pengguna  lainnya  berikut  adalah  isi 
-
-keranjang pengguna : id  (5). 
-
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.014.jpeg)
-- Disini saya sudah berhasil untuk melakukan challenge melihat keranjang orang lain.
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.015.jpeg)
-
-- Percobaan : Login Admin 
-- Disini saya bermaksud ingin mencari data email, yang mana ditemukan di komentar ulasan. Dimana ada informasi email admin disana. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.016.jpeg)
-
-- Kemudian saya melakukan login dengan menggunakan password dummy, namun sebelumnya saya  melakukan  perubahan  status  menjadi  on  di  intercept.
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.017.jpeg)
-
-- Ketika melakukan submit login, intercept memberikan informasi berupa baris informasi yang mana memuat email dan password. 
-- Kemudian setelah melihat informasi tersebut, saya menggunakan ikon yang dikotaki warna merah untuk melakukan pengiriman menuju intruder, positions. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.018.png)
-
-- Kemudian kita berpindah ke halaman intruder, positions dan melihat data informasi yang ada disana, kemudian klik clear. Ada penambahan beberapa data ketika proses melakukan clear 
-
-data.
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.019.jpeg)
-
-- Kemudian klik add, yang mana dalam hal ini akan membuat data email memiliki tambahan sign dollar didepannya. Hal ini membuat adanya perubahan yang ada. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.020.jpeg)
-
-- Proses berikutnya saya menuju ke payloads dan melakukan load data file password.txt yang sebelumnya sudah dibuat. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.021.jpeg)
-
-- Setelah itu kemudian data yang diinputkan pada txt akan muncul di dalam kotak putih sebagai list data password, kemudian klik button start attack. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.022.jpeg)
-
-- Setelah itu, akan tertampil sebuah moodal yang menampilkan list password yang dicoba sebelumnya,  dan memuat informasi status dan length dan data lain. Disini semua 400 hasilnya kecuali data terakhir “admin123” yang memiliki status 200. 
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.023.jpeg)
-
-- Kemudian saya mencoba untuk login menggunakan “admin1123” disini saya berhasil untuk login sebagai admin dan dapat mengakses keranjang serta profile dari akun admin yang ada di dalam owasp juice shop. 
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.024.jpeg)
-- ![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.025.jpeg)
-
-![](Aspose.Words.6300ae08-044c-4863-8606-8866bcd4602d.026.jpeg)
-
-**Kesimpulan**  
-
-Disini saya berhasil membuktikan bahwa website owasp juice shop ini masih memiliki kerentanan yang mana disebutkan dalam owasp 10 yakni broken access control dimana saya dapat melihat keranjang dari user lain dan login sebagai admin padahal saya tidak terdaftar dan belum mengetahui password admin sebelumnya. 
+> ![](vertopal_a5e80c03ec884d9996c9f1e6c4d872bf/media/image26.png){width="6.268054461942257in"
+> height="3.345833333333333in"}
+>
+> **Kesimpulan**
+>
+> Disini saya berhasil membuktikan bahwa website owasp juice shop ini
+> masih memiliki kerentanan yang mana disebutkan dalam owasp 10 yakni
+> broken access control dimana saya dapat melihat keranjang dari user
+> lain dan login sebagai admin padahal saya tidak terdaftar dan belum
+> mengetahui password admin sebelumnya.
