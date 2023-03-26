@@ -131,15 +131,12 @@ Physical Security
 
 |<p>Management </p><p>-  ERM  best  practice implementation </p>|<p>Operation </p><p>-  Clear  network segregation  of  IOT devices </p>|<p>Technology </p><p>-  Secure Infrastructure </p>|
 | - | - | - |
-
-
-|- |High  level engangement |- - |Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
+|- |<p> High  level engangement </p> |- - | <p>Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. </p> |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
 | - | :- | - | - | :- | - |
 ||||Application |
 ||||Platform |
 ||||Network |
 ||||Sensor & Devices |
-
 
 **Smarthome IOT Security Threat & Challenges** 
 
