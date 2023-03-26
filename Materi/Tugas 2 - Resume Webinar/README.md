@@ -34,515 +34,179 @@
 
 **Pengenalan**
 
-Komputasi awan adalah model yang menawarkan layanan komputasi instan
-tanpa beban. Namun demikian, seperti teknologi lainnya, ini membawa
-kekurangannya. Salah satu masalah utama adalah masalah keamanan dan
-privasi termasuk kebocoran data karena infrastruktur sumber daya
-komputasi bersama untuk memproses informasi bisnis rahasia -- seperti
-kekayaan intelektual, rahasia dagang, dan informasi rahasia pelanggan,
-yang dapat menyebabkan aktor yang tidak sah dapat mengaksesnya.
+Komputasi awan adalah model yang menawarkan layanan komputasi instan tanpa beban. Namun demikian, seperti teknologi lainnya, ini membawa kekurangannya. Salah satu masalah utama adalah masalah keamanan dan privasi termasuk kebocoran data karena infrastruktur sumber daya komputasi bersama untuk memproses informasi bisnis rahasia – seperti kekayaan intelektual, rahasia dagang, dan informasi rahasia pelanggan, yang dapat menyebabkan aktor yang tidak sah dapat mengaksesnya. 
 
-Pada hari pertama. Yang terbaik adalah sesuai permintaan, kami tidak
-perlu merencanakan dan mencadangkan sejumlah biaya sebelum implementasi
-karena cloud dapat memberi Anda sumber daya secara instan. Ini adalah
-keuntungan terbesar yang kami lihat saat kami menerapkan sistem cloud,
-dan perusahaan dapat mengakses teknologi terbaru dan karenanya kami
-merasa perlu memperluas infrastruktur dan biaya pemeliharaan. Karena
-sudah pada biaya operasional. Kami dapat berdiskusi dengan penyedia
-tingkat layanan mana yang dapat mereka berikan paling banyak, paling
-efisien bagi kami.
+Pada hari pertama. Yang terbaik adalah sesuai permintaan, kami tidak perlu merencanakan dan mencadangkan  sejumlah  biaya  sebelum  implementasi  karena  cloud  dapat  memberi  Anda sumber  daya  secara  instan.  Ini  adalah  keuntungan  terbesar  yang  kami  lihat  saat  kami menerapkan sistem cloud, dan perusahaan dapat mengakses teknologi terbaru dan karenanya kami merasa perlu memperluas infrastruktur dan biaya pemeliharaan. Karena sudah pada biaya operasional. Kami dapat berdiskusi dengan penyedia tingkat layanan mana yang dapat mereka berikan paling banyak, paling efisien bagi kami. 
 
-**The Treaths**
+**The Treaths** 
 
-+-----------------------------------+-----------------------------------+
-| \-                                | > Data Loss and Data leakage\     |
-|                                   | > Sebagian besar fitur            |
-| \-                                | > perlindungan data Cloud untuk   |
-|                                   | > perusahaan ditawarkan secara    |
-| \-                                | > terpisah sebagai penyimpanan    |
-|                                   | > tambahan opsional dan layanan   |
-| \-                                | > tambahan untuk retensi snapshot |
-|                                   | > dan anti-ransomware karena      |
-|                                   | > sumber dayanya banyak dan       |
-|                                   | > mahal.                          |
-|                                   | >                                 |
-|                                   | > Abuse and Nefarious Use\        |
-|                                   | > Karena komputasi awan adalah    |
-|                                   | > ekosistem berbagai layanan,     |
-|                                   | > interaksi, dan saling           |
-|                                   | > ketergantungan, menjadi lebih   |
-|                                   | > umum. Eksploitasi (PaaS) untuk  |
-|                                   | > \"Peretasan sebagai Layanan\"   |
-|                                   | > dapat lebih menantang untuk     |
-|                                   | > dimitigasi karena tersembunyi   |
-|                                   | > di infrastruktur yang sama.     |
-|                                   | >                                 |
-|                                   | > Insecure Interface and APIs\    |
-|                                   | > Mengeksploitasi API yang tidak  |
-|                                   | > aman di lingkungan              |
-|                                   | > multi-penyewa dapat             |
-|                                   | > meningkatkan risiko spionase    |
-|                                   | > bisnis, yang berpotensi         |
-|                                   | > mengakibatkan kompromi atau     |
-|                                   | > pencurian data sensitif dan     |
-|                                   | > pribadi.                        |
-|                                   | >                                 |
-|                                   | > Shared Technology Issues\       |
-|                                   | > Penyedia layanan cloud          |
-|                                   | > menggunakan infrastruktur       |
-|                                   | > terukur untuk mendukung banyak  |
-|                                   | > penyewa yang berbagi            |
-|                                   | > infrastruktur dasar. Di lapisan |
-|                                   | > paling bawah, tempat hypervisor |
-|                                   | > dapat dieksploitasi dari mesin  |
-|                                   | > virtual yang disusupi di        |
-|                                   | > penyewa lain untuk mendapatkan  |
-|                                   | > akses ke semua VM di lingkungan |
-|                                   | > bersama yang sama.              |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+- Data Loss and Data leakage 
 
-**The Attacks**
+Sebagian besar fitur perlindungan data Cloud untuk perusahaan ditawarkan secara terpisah sebagai penyimpanan tambahan opsional dan layanan tambahan untuk retensi snapshot dan anti-ransomware karena sumber dayanya banyak dan mahal. 
 
-+-----------------------------------+-----------------------------------+
-| \-                                | > Virtual Machine Level Attacks\  |
-|                                   | > Serangan pada platform cloud    |
-| > \-\                             | > yang sama dapat memengaruhi     |
-| > -\                              | > penyewa lainnya. Penerapan      |
-| > -                               | > cloud apa pun wajib untuk       |
-|                                   | > mengeraskan lapisan             |
-|                                   | > virtualisasi guna mencegah      |
-|                                   | > serangan VM ke VMc.             |
-|                                   | >                                 |
-|                                   | > Service and Session Hijacking\  |
-|                                   | > Man in the cloud and DdoS       |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+- Abuse and Nefarious Use 
 
-**The Security**
+Karena  komputasi  awan  adalah  ekosistem  berbagai  layanan,  interaksi,  dan  saling ketergantungan, menjadi lebih umum. Eksploitasi (PaaS) untuk "Peretasan sebagai Layanan" dapat lebih menantang untuk dimitigasi karena tersembunyi di infrastruktur yang sama. 
 
-+-----------------------------------+-----------------------------------+
-| \-                                | > Cloud Control Layers\           |
-|                                   | > Terapkan lapisan kontrol        |
-| \-                                | > tambahan dalam manajemen cloud  |
-|                                   | > dari penyedia solusi pihak      |
-|                                   | > ketiga, terutama untuk          |
-|                                   | > penerapan multi-cloud.          |
-|                                   | >                                 |
-|                                   | > Shared Responsibilities\        |
-|                                   | > Terapkan \"perjanjian           |
-|                                   | > back-to-back\" dengan penyedia  |
-|                                   | > cloud Anda untuk memastikan     |
-|                                   | > kepatuhan standar keamanan      |
-|                                   | > penuh.                          |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+- Insecure Interface and APIs 
 
-**The Tools**
+Mengeksploitasi  API  yang  tidak  aman  di  lingkungan  multi-penyewa  dapat meningkatkan risiko spionase bisnis, yang berpotensi mengakibatkan kompromi atau pencurian data sensitif dan pribadi. 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Software Defined Security :     |
-| > -                               | > re-assure the highest cloud     |
-|                                   | > security solutions available    |
-| \-                                | > Multifactor authentication :    |
-|                                   | > AAA advancement for every cloud |
-|                                   | > layer e.g. mandatory biometrics |
-|                                   | > combinations.                   |
-|                                   | >                                 |
-|                                   | > Inspection and Monitoring :     |
-|                                   | > second opinion assessment       |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+- Shared Technology Issues 
 
-**Summary**
+Penyedia layanan cloud menggunakan infrastruktur terukur untuk mendukung banyak penyewa yang berbagi infrastruktur dasar. Di lapisan paling bawah, tempat hypervisor dapat dieksploitasi dari mesin virtual yang disusupi di penyewa lain untuk mendapatkan akses ke semua VM di lingkungan bersama yang sama. 
 
-Diskusi ini menyampaikan masalah keamanan yang terkait dengan layanan
-cloud. Tercatat bahwa penjahat dunia maya telah memanfaatkan kerentanan
-dalam ekosistem bersama dan kurangnya kontrol keamanan yang efektif,
-yang menyebabkan penyalahgunaan platform. Peretas dapat secara ilegal
-mengakses informasi rahasia penyewa lain yang berada di infrastruktur
-cloud yang sama. Oleh karena itu, bisnis disarankan untuk melakukan
-penilaian risiko berkelanjutan untuk memitigasi potensi ancaman terhadap
-data sensitif mereka. Selain itu, penyedia keamanan cloud harus
-meningkatkan perlindungan keamanan melalui penerapan langkah-langkah
-keamanan proaktif yang lebih maju dan canggih untuk mengatasi tantangan
-ini.
+**The Attacks** 
 
-## Topik 2 -- IOT Security
+- Virtual Machine Level Attacks 
 
-**Latar Belakang**
+Serangan  pada  platform  cloud  yang  sama  dapat  memengaruhi  penyewa  lainnya. Penerapan cloud apa pun wajib untuk mengeraskan lapisan virtualisasi guna mencegah serangan VM ke VMc. 
 
-Internet of Things (IOT) berevolusi menyesuaikan bagaimana kita hidup,
-bekerja dan berinteraksi dengan teknologi. Dengan membuat banyak lebih
-dan lebih devices menjadi terkoneksi, potensi untuk pelanggaran
-sekuritas dan kejahatan data bertambah. Digital transformasi dan
-bangkitnya smart homes di Indonesia diperkuat dengan kebutuhan untuk
-mengkokohkan IOT security practises.
+- Service and Session Hijacking 
+- Man in the cloud and DdoS 
+ 
 
-**IOT Security Concern**
+**The Security** 
 
-Authentication
+- Cloud Control Layers  Terapkan lapisan kontrol tambahan dalam manajemen cloud dari penyedia solusi pihak ketiga, terutama untuk penerapan multi-cloud. 
+- Shared Responsibilities 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Mechanism\                      |
-| > -\                              | > Credential\                     |
-| > -                               | > Process                         |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Terapkan "perjanjian back-to-back" dengan penyedia cloud Anda untuk memastikan kepatuhan standar keamanan penuh. 
 
-Firmware & Software Updates
+**The Tools**  
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Vulnerabilities\                |
-| > -\                              | > Exploitation\                   |
-| > -                               | > Methods                         |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+- Software Defined Security : re-assure the highest cloud security solutions available 
+- Multifactor authentication : AAA advancement for every cloud layer e.g. mandatory biometrics combinations. 
+- Inspection and Monitoring : second opinion assessment 
 
-Standardization
+**Summary** 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Based on manufacturer\          |
-| > -\                              | > Based on different protocols\   |
-| > -                               | > Interoperability                |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Diskusi ini menyampaikan masalah keamanan yang terkait dengan layanan cloud. Tercatat bahwa penjahat dunia maya telah memanfaatkan kerentanan dalam ekosistem bersama dan kurangnya  kontrol  keamanan  yang  efektif,  yang  menyebabkan  penyalahgunaan  platform. Peretas  dapat  secara  ilegal  mengakses  informasi  rahasia  penyewa  lain  yang  berada  di infrastruktur cloud yang sama. Oleh karena itu, bisnis disarankan untuk melakukan penilaian risiko berkelanjutan untuk memitigasi potensi ancaman terhadap data sensitif mereka. Selain itu, penyedia keamanan cloud harus meningkatkan perlindungan keamanan melalui penerapan langkah-langkah keamanan proaktif yang lebih maju dan canggih untuk mengatasi tantangan ini. 
 
-Privacy & Personal Data Protection
+## Topik 2 – IOT Security Latar Belakang 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Collection & Storage\           |
-| > -\                              | > Acsess Methods\                 |
-| > -                               | > Processing Mechanism            |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Internet  of  Things  (IOT)  berevolusi  menyesuaikan  bagaimana  kita  hidup,  bekerja  dan berinteraksi  dengan teknologi.  Dengan  membuat  banyak  lebih dan lebih  devices menjadi terkoneksi,  potensi  untuk  pelanggaran  sekuritas  dan  kejahatan  data  bertambah.  Digital transformasi dan bangkitnya smart homes di Indonesia diperkuat dengan kebutuhan untuk mengkokohkan IOT security practises. 
 
-Physical Security
+**IOT Security Concern** 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Access\                         |
-| > -\                              | > Location\                       |
-| > -                               | > Vandalism Protection            |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Authentication 
 
-**Tantangan Baru dalam Keamanan (Security)**
+- Mechanism 
+- Credential 
+- Process 
 
-+-----------------------+-----------------------+-----------------------+
-| > Network             | +--------+--------+   | > Network Security    |
-|                       | | > \-\  | >      |   |                       |
-|                       | | > -\   |  Ultra |   |                       |
-|                       | | > -\   | > High |   |                       |
-|                       | | > -\   | >      |   |                       |
-|                       | | > -    |  Throu |   |                       |
-|                       | |        | ghput\ |   |                       |
-|                       | |        | > L    |   |                       |
-|                       | |        | atency |   |                       |
-|                       | |        | > \< 1 |   |                       |
-|                       | |        | > ms\  |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | Availa |   |                       |
-|                       | |        | bility |   |                       |
-|                       | |        | > 9    |   |                       |
-|                       | |        | 9.999% |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  Conne |   |                       |
-|                       | |        | ction\ |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | Aggreg |   |                       |
-|                       | |        | ation\ |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  High\ |   |                       |
-|                       | |        | > Se   |   |                       |
-|                       | |        | curity |   |                       |
-|                       | |        | > (P   |   |                       |
-|                       | |        | rivate |   |                       |
-|                       | |        | > Ne   |   |                       |
-|                       | |        | twork) |   |                       |
-|                       | +========+========+   |                       |
-|                       | +--------+--------+   |                       |
-+=======================+=======================+=======================+
-| > Data Storage        | +--------+--------+   | > Data dan Platform   |
-|                       | | > \-\  | >      |   | > Security            |
-|                       | | > -\   |  Local |   |                       |
-|                       | | > -\   | > Edge |   |                       |
-|                       | | > -\   | > Comp |   |                       |
-|                       | | > -    | uting\ |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  Local |   |                       |
-|                       | |        | > Data |   |                       |
-|                       | |        | > St   |   |                       |
-|                       | |        | orage\ |   |                       |
-|                       | |        | > On   |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  Cloud |   |                       |
-|                       | |        | > Data |   |                       |
-|                       | |        | > St   |   |                       |
-|                       | |        | orage\ |   |                       |
-|                       | |        | > High |   |                       |
-|                       | |        | > Se   |   |                       |
-|                       | |        | curity |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | Hybrid |   |                       |
-|                       | |        | > Data |   |                       |
-|                       | |        | > St   |   |                       |
-|                       | |        | orage\ |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  Distr |   |                       |
-|                       | |        | ibuted |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | ledger |   |                       |
-|                       | |        | > for  |   |                       |
-|                       | |        | > de   |   |                       |
-|                       | |        | crntra |   |                       |
-|                       | |        | lized\ |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | archit |   |                       |
-|                       | |        | ecture |   |                       |
-|                       | |        | > &    |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | secure |   |                       |
-|                       | |        | > data |   |                       |
-|                       | |        | > s    |   |                       |
-|                       | |        | haring |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  among |   |                       |
-|                       | |        | > edge |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        |  nodes |   |                       |
-|                       | |        | >      |   |                       |
-|                       | |        | (block |   |                       |
-|                       | |        | chain) |   |                       |
-|                       | +========+========+   |                       |
-|                       | +--------+--------+   |                       |
-+-----------------------+-----------------------+-----------------------+
-| > System Integrator   | <table>               | <table>               |
-|                       | <colgroup>            | <colgroup>            |
-|                       | <col                  | <col                  |
-|                       | style="width: 33%" /> | style="width: 33%" /> |
-|                       | <col                  | <col                  |
-|                       | style="width: 33%" /> | style="width: 33%" /> |
-|                       | <col                  | <col                  |
-|                       | style="width: 33%" /> | style="width: 33%" /> |
-|                       | </colgroup>           | </colgroup>           |
-|                       | <thead>               | <thead>               |
-|                       | <tr class="header">   | <tr class="header">   |
-|                       | <th>-</th>            | <th><blockquote>      |
-|                       | <th                   | <p>Device<br />       |
-|                       | row                   | Security</p>          |
-|                       | span="3"><blockquote> | </blockquote></th>    |
-|                       | <p>Migration<br />    | <th>&amp;</th>        |
-|                       | Integratiuon          | <th><blockquote>      |
-|                       | Installation<br />    | <p>Application</p>    |
-|                       | Delivery<br />        | </blockquote></th>    |
-|                       | Optimization</p>      | </tr>                 |
-|                       | </blockquote></th>    | </thead>              |
-|                       | <th>&amp;</th>        | <tbody>               |
-|                       | </tr>                 | </tbody>              |
-|                       | <tr class="odd">      | </table>              |
-|                       | <th>-</th>            |                       |
-|                       | <th                   |                       |
-|                       | r                     |                       |
-|                       | owspan="2">&amp;</th> |                       |
-|                       | </tr>                 |                       |
-|                       | <tr class="header">   |                       |
-|                       | <th>-</th>            |                       |
-|                       | </tr>                 |                       |
-|                       | </thead>              |                       |
-|                       | <tbody>               |                       |
-|                       | </tbody>              |                       |
-|                       | </table>              |                       |
-+-----------------------+-----------------------+-----------------------+
+Firmware & Software Updates 
 
-**Managing IOT Security**
+- Vulnerabilities 
+- Exploitation 
+- Methods 
 
-+-----------------------+-----------------------+-----------------------+
-| > Management\         | > Operation\          | > Technology\         |
-| > - ERM best practice | > - Clear network     | > - Secure            |
-| > implementation      | > segregation of IOT  | > Infrastructure      |
-|                       | > devices             |                       |
-+=======================+=======================+=======================+
-+-----------------------+-----------------------+-----------------------+
+Standardization 
 
-+-----------------------+-----------------------+-----------------------+
-| <table>               | +--------+--------+   | +--------+--------+   |
-| <colgroup>            | | > \-\  | > S    |   | | \-     | >      |   |
-| <col                  | | > -    | trengt |   | |        | Ensure |   |
-| style="width: 33%" /> | |        | hening |   | | \-     | > data |   |
-| <col                  | |        | >      |   | |        | >      |   |
-| style="width: 33%" /> | |        | remote |   | |        |  trust |   |
-| <col                  | |        | >      |   | |        | > by   |   |
-| style="width: 33%" /> | |        | access |   | |        | > ver  |   |
-| </colgroup>           | |        | >      |   | |        | ifying |   |
-| <thead>               | |        |  proce |   | |        | > p    |   |
-| <tr class="header">   | |        | dures\ |   | |        | ayload |   |
-| <th>-</th>            | |        | > Im   |   | |        | > inte |   |
-| <th><blockquote>      | |        | plemen |   | |        | grity\ |   |
-| <p>High level</p>     | |        | tation |   | |        | >      |   |
-| <p>engangement</p>    | |        | > of   |   | |        | Manage |   |
-| </blockquote></th>    | |        | > in   |   | |        | > t    |   |
-| <th>active</th>       | |        | cident |   | |        | rusted |   |
-| </tr>                 | |        | > det  |   | |        | > node |   |
-| </thead>              | |        | ection |   | |        | > lif  |   |
-| <tbody>               | |        | > s    |   | |        | ecycle |   |
-| </tbody>              | |        | ystem, |   | +========+========+   |
-| </table>              | |        | > st   |   | +--------+--------+   |
-|                       | |        | andart |   |                       |
-|                       | |        | > pro  |   |                       |
-|                       | |        | cedure |   |                       |
-|                       | |        | > &    |   |                       |
-|                       | |        | > res  |   |                       |
-|                       | |        | ponse. |   |                       |
-|                       | +========+========+   |                       |
-|                       | +--------+--------+   |                       |
-+=======================+=======================+=======================+
-| Application           |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Platform              |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Network               |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-| Sensor & Devices      |                       |                       |
-+-----------------------+-----------------------+-----------------------+
+- Based on manufacturer 
+- Based on different protocols 
+- Interoperability 
 
-**Smarthome IOT Security Threat & Challenges**
+Privacy & Personal Data Protection 
 
-Devices Vulnerability
+- Collection & Storage 
+- Acsess Methods 
+- Processing Mechanism 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Hacking\                        |
-| > -\                              | > Data Breaches\                  |
-| > -                               | > Malware Attacks                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Physical Security 
 
-Hackers
+- Access 
+- Location 
+- Vandalism Protection 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Exploit vulnerabilities\        |
-| > -\                              | > Gain Access to home network\    |
-| > -                               | > Steal Data and take control of  |
-|                                   | > devices                         |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+**Tantangan Baru dalam Keamanan (Security)** 
 
-Data Breaches
+|Network |<p>- </p><p>- - - </p><p>- </p>|<p>Ultra  High Throughput </p><p>Latency < 1 ms Availability 99.999% Connection Aggregation </p><p>High  Security (Private Network) </p>|Network Security |
+| - | - | :- | - |
+|Data Storage |<p>- </p><p>- - </p><p>- - </p>|<p>Local  Edge Computing </p><p>Local Data Storage On  Cloud  Data Storage </p><p>High Security Hybrid Data Storage Distributed ledger for decrntralized architecture & secure data  sharing  among edge  nodes (blockchain) </p>|Data dan Platform Security |
+|System Integrator |- - - |Migration  & Integratiuon Installation  & Delivery Optimization |Device  &  Application Security |
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Leaking of personal             |
-| > -\                              | > information\                    |
-| > -                               | > Password, Email, Credit Card    |
-|                                   | > Details stolen Device Storage   |
-|                                   | > data collection                 |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
 
-Malware Attacks
+**Managing IOT Security** 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Viruses.                        |
-| > -\                              | >                                 |
-| > -                               | > Trojan\                         |
-|                                   | > Spywares, bugs, etc             |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+|<p>Management </p><p>-  ERM  best  practice implementation </p>|<p>Operation </p><p>-  Clear  network segregation  of  IOT devices </p>|<p>Technology </p><p>-  Secure Infrastructure </p>|
+| - | - | - |
 
-**Best Practices for Smarthome IOT Security**
 
-Password
+|- |High  level engangement |active |- - |Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
+| - | :- | - | - | :- | - |
+||||Application |
+||||Platform |
+||||Network |
+||||Sensor & Devices |
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Tidak berdasarkan default\      |
-| > -\                              | > Kuat dan Unik\                  |
-| > -                               | > Diganti secara berkala          |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
 
-Firmware & Software Updates
+**Smarthome IOT Security Threat & Challenges** 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Regular Updates\                |
-| > -\                              | > Latest Patch\                   |
-| > -                               | > Avoid Vulnerabilities           |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Devices Vulnerability 
 
-Network
+- Hacking 
+- Data Breaches 
+- Malware Attacks 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Implementation Segregation\     |
-| > -\                              | > Strengthening Firewalls in      |
-| > -                               | > Gateway Uses Redudancy          |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Hackers 
 
-Encryption
+- Exploit vulnerabilities 
+- Gain Access to home network 
+- Steal Data and take control of devices 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Access\                         |
-| > -\                              | > Location\                       |
-| > -                               | > Vandalism Protection            |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Data Breaches 
 
-Audit & Assesment
+- Leaking of personal information 
+- Password, Email, Credit Card Details stolen 
+- Device Storage data collection 
 
-+-----------------------------------+-----------------------------------+
-| > \-\                             | > Regularly\                      |
-| > -\                              | > People Process Technology\      |
-| > -                               | > Proactive Risk Migration        |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+Malware Attacks 
 
-**Summary**
+- Viruses. 
+- Trojan 
+- Spywares, bugs, etc 
 
-Perangkat dan solusi IoT akan memiliki penetrasi yang signifikan dalam
-solusi digital yang berpusat pada manusia yang menghadap ke masa depan
-untuk pengembangan permintaan yang sangat besar di segmen vertikal
-terutama untuk memenuhi kebutuhan masyarakat.
+**Best Practices for Smarthome IOT Security** 
 
-Siklus hidup teknologi baru semakin pendek oleh karena itu kolaborasi,
-berbagi, teregulasi & penyebaran infrastruktur inovatif menjadi kunci
-keberhasilan keamanan IOT.
+Password 
 
-+-----------------------+-----------------------+-----------------------+
-| > People              | > Secure              | > Competence & Follow |
-|                       |                       | > the rules           |
-+=======================+=======================+=======================+
-| > Device              | > Secure              | <table>               |
-|                       |                       | <colgroup>            |
-|                       |                       | <col                  |
-|                       |                       | style="width: 33%" /> |
-|                       |                       | <col                  |
-|                       |                       | style="width: 33%" /> |
-|                       |                       | <col                  |
-|                       |                       | style="width: 33%" /> |
-|                       |                       | </colgroup>           |
-|                       |                       | <thead>               |
-|                       |                       | <tr class="header">   |
-|                       |                       | <th><blockquote>      |
-|                       |                       | <p>Reliable,<br />    |
-|                       |                       | Connected</p>         |
-|                       |                       | </blockquote></th>    |
-|                       |                       | <th>OTA</th>          |
-|                       |                       | <th><blockquote>      |
-|                       |                       | <p>Updates,</p>       |
-|                       |                       | </blockquote></th>    |
-|                       |                       | </tr>                 |
-|                       |                       | </thead>              |
-|                       |                       | <tbody>               |
-|                       |                       | </tbody>              |
-|                       |                       | </table>              |
-+-----------------------+-----------------------+-----------------------+
-| > Network             | > Secure              | > Guaranteed SLA's    |
-+-----------------------+-----------------------+-----------------------+
-| > Platform &          | > Secure              | +--------+--------+   |
-| > Application         |                       | | > Guar | > M    |   |
-|                       |                       | | anteed | anaged |   |
-|                       |                       | | > Se   | >      |   |
-|                       |                       | | rvice\ | Follow |   |
-|                       |                       | | > Pra  | > Best |   |
-|                       |                       | | ctices |        |   |
-|                       |                       | +========+========+   |
-|                       |                       | +--------+--------+   |
-+-----------------------+-----------------------+-----------------------+
+- Tidak berdasarkan default 
+- Kuat dan Unik 
+- Diganti secara berkala 
+
+Firmware & Software Updates 
+
+- Regular Updates 
+- Latest  Patch 
+- Avoid Vulnerabilities 
+
+Network 
+
+- Implementation Segregation 
+- Strengthening Firewalls in Gateway 
+- Uses Redudancy 
+
+Encryption 
+
+- Access 
+- Location 
+- Vandalism Protection 
+
+Audit & Assesment 
+
+- Regularly 
+- People Process Technology 
+- Proactive Risk Migration 
+
+**Summary** 
+
+Perangkat dan solusi IoT akan memiliki penetrasi yang signifikan dalam solusi digital yang berpusat pada manusia yang menghadap ke masa depan untuk pengembangan permintaan yang sangat besar di segmen vertikal terutama untuk memenuhi kebutuhan masyarakat. 
+
+Siklus hidup teknologi baru semakin pendek oleh karena itu kolaborasi, berbagi, teregulasi & penyebaran infrastruktur inovatif menjadi kunci keberhasilan keamanan IOT. 
+
+|People  |Secure |Competence  &  Follow  the rules |
+| - | - | :- |
+|Device |Secure |Reliable,  OTA  Updates, Connected |
+|Network |Secure |Guaranteed SLA’s |
+|Platform & Application |Secure |Guaranteed  Managed Service  Follow  Best Practices |
