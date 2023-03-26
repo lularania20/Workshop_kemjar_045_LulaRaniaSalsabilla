@@ -129,14 +129,27 @@ Physical Security
 
 **Managing IOT Security** 
 
-|<p>Management </p><p>-  ERM  best  practice implementation </p>|<p>Operation </p><p>-  Clear  network segregation  of  IOT devices </p>|<p>Technology </p><p>-  Secure Infrastructure </p>|
-| - | - | - |
-|- |<p> High  level engangement </p> |- - | <p>Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. </p> |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
-| - | :- | - | - | :- | - |
-||||Application |
-||||Platform |
-||||Network |
-||||Sensor & Devices |
+1. Management
+-  ERM  best  practice implementation
+-  High  level active engangement 
+
+2. Operation 
+-  Clear  network segregation  of  IOT devices
+-  Strengthening remote access procedures 
+-  Implementation  of incident  detection system,  standart procedure  & response. 
+
+3. Technology 
+-  Secure Infrastructure
+-  Ensure  data  trust  by verifying payload integrity
+-  Manage trusted node lifecycle 
+
+4. Application
+
+5. Platform
+
+6. Network
+
+7. Sensor & Devices
 
 **Smarthome IOT Security Threat & Challenges** 
 
