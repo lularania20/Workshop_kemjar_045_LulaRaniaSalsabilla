@@ -133,7 +133,7 @@ Physical Security
 | - | - | - |
 
 
-|- |High  level engangement |active |- - |Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
+|- |High  level engangement |- |Strengthening remote access procedures Implementation  of incident  detection system,  standart procedure  & response. |<p>- Ensure  data  trust  by verifying  payload integrity </p><p>- Manage trusted node lifecycle </p>|
 | - | :- | - | - | :- | - |
 ||||Application |
 ||||Platform |
