@@ -243,4 +243,7 @@
 > dalam owasp 10 yakni cryptographic failures dimana saya dapat melihat adanya kode yang disembunyikan dan dapat 
 > dilacak serta dilihat dengan menggunakan beberapa tools yang ada.
 >
+> ## Video Praktikum
+>
+> https://youtu.be/ZDqbhZhSQG0
 

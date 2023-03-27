@@ -149,3 +149,7 @@ Semua website dipastikan membutuhkan access control. Oleh karena itu aturan dan 
 ## Kesimpulan
 
 Disini saya berhasil membuktikan bahwa website owasp juice shop ini masih memiliki kerentanan yang mana disebutkan dalam owasp 10 yakni broken access control dimana saya dapat melihat keranjang dari user lain dan login sebagai admin padahal saya tidak terdaftar dan belum mengetahui password admin sebelumnya.
+
+## Video Praktikum
+
+https://youtu.be/ePsDp-CR4dY 
