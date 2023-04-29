@@ -108,6 +108,7 @@
 > - Threat
 > Sebuah potensi yang menyebabkan sesuatu yang tidak diinginkan terjadi
 > pada sistem atau organisasi. Berikut kategori threat :
+>
 > 1)Natural Threats
 > Contohnya : gempa bumi, tornado, banjir, dll.
 >
@@ -128,55 +129,31 @@
 > - Risk
 > Kemungkinan sumber ancaman tertentu terhadap kerentanan potensial dan
 > dampak yang dihasilkan dari peristiwa buruk itu pada organisasi.
-
-+-----------------------+-----------------------+-----------------------+
-| > Vulnerability       | > Threat Source       | > Threat Action       |
-+=======================+=======================+=======================+
-| > Kerentanan kritis   | > Pengguna yang tidak | > Tidak mendapatkan   |
-| > dalam perangkat     | >                     | > otorisasi terhadap  |
-| > lunak server web    | terotorisasi(karyawan | > informasi (file,    |
-| > diidentifikasi      | > internal, peretas,  | > informasi sensitif) |
-| > tetapi              | > kriminal)           |                       |
-| > patch perangkat     |                       |                       |
-| > lunak belum         |                       |                       |
-| > diterapkan          |                       |                       |
-+=======================+=======================+=======================+
-| > Kredensial karyawan | > Pemberhentian user  | > Mengakses sistem    |
-| > yang pemberhentian  |                       | > perusahaan dan      |
-| > user dihentikan     |                       | > informasi           |
-| > (nama pengguna dan  |                       | > kepemilikan         |
-| > kata                |                       |                       |
-| > sandi) tidak        |                       |                       |
-| > dihapus dari sistem |                       |                       |
-+-----------------------+-----------------------+-----------------------+
-
+>
+> ![](media/image4.png)
+>
 > **Security Control**
 > Tindakan pencegahan yang diberlakukan organisasi untuk melindungi aset
 > informasi.
 >
 > - Policy and Procedures
 > Tujuan :
-> Agar semuanya memperhatikan tentang keamanan, membagi peran dan
-> tanggung jawab , mengamati masalah.
->
+> Agar semuanya memperhatikan tentang keamanan, membagi peran dan tanggung jawab , mengamati masalah.
 > Contoh :
 > Cyber Security Policy
 >
 > - Incident Handling Procedure
+>
 > - Technical
 > Tujuan :
-> Untuk mencegah dan mendeteksi potensi serangan, mengurangi risiko
-> pelanggaran pada lapisan jaringan atau sistem.
->
+> Untuk mencegah dan mendeteksi potensi serangan, mengurangi risiko pelanggaran pada lapisan jaringan atau sistem.
 > Contoh :
 > - Firewall
 > - Anti Virus Software
 >
 > - Physical
 > Tujuan :
-> Untuk mencegah pencurian fisik aset informasi atau akses fisik yang
-> tidak sah.
->
+> Untuk mencegah pencurian fisik aset informasi atau akses fisik yang tidak sah.
 > Contoh :
 > - CCTV
 > - Locks
