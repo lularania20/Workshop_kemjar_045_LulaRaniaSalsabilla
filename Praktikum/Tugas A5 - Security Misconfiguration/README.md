@@ -58,20 +58,20 @@ Memunculkan error, tetapi error yang ditampilkan tidak secara bagus dan konsiste
 
 1. Menjalankan aplikasi Burp Suite terlebih dahulu
 
-    ![Screenshot](images/2.png)
+    ![Screenshot](images/image2.png)
 
 2. Kemudian buka browser dan pergi ke halaman utama website OWASP Juice Shop
 
-    ![Screenshot](images/3.png)
+    ![Screenshot](images/image3.png)
 
 3. Buka kembali Burp Suite maka akan muncul request baru yaitu /rest/product/search
 
-    ![Screenshot](images/4.png)
+    ![Screenshot](images/image4.png)
 
 4. Masukkan payload /rest/product/search tadi ke repeater lalu ubah enpointnya menjadi text random lalu klik tombol send
 
-    ![Screenshot](images/5.png)
-     ![Screenshot](images/6.png)
+    ![Screenshot](images/image5.png)
+    ![Screenshot](images/image6.png)
 
     Analisis
     Terdapat response error 500 atau internal server error yang disini terlihat terdapat error message yang begitu panjangnya dan tidak tertata
@@ -83,17 +83,17 @@ Menggunakan antarmuka B2B usang yang tidak dimatikan dengan benar.
 
 1. Pada halaman utama, klik tombol menu di pojok kiri atas untuk memunculkan sidebar. Setelah itu klik complaint
 
-    ![Screenshot](images/7.png)
+    ![Screenshot](images/image7.png)
 
 2. Setelah sudah masuk ke halaman complaint, isikan form yang ada, dan masukkan file dengan format xml
 
-    ![Screenshot](images/8.png)
+    ![Screenshot](images/image8.png)
 
 3. Setelah itu akan muncul challange Deprecated Interface berhasil di selesaikan seperti ini
 
-    ![Screenshot](images/9.png)
+    ![Screenshot](images/image9.png)
 
 4. Jika kita lihat di proxy history pada burp suite, akan muncul error panjang seperti ini
 
-    ![Screenshot](images/10.png)
+    ![Screenshot](images/image10.png)
 
