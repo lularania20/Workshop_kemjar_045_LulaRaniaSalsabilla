@@ -84,29 +84,29 @@ Brute force attack adalah metode peretasan yang dilakukan menggunakan cara trial
 
     ```sqlmap -u “Url” –dbs```
 
-     ![Screenshot](images/7.png)
-     ![Screenshot](images/7-2.png)
+     ![Screenshot](images/7.PNG)
+     ![Screenshot](images/7-2.PNG)
 
 8. Menjalankan sqlmap dengan kode dibawah ini untuk melihat table pada database yang dimaksud
 
     ```sqlmap -u “url” -D vulnweb –tables```
 
-     ![Screenshot](images/8.png)
-     ![Screenshot](images/8-2.png)
+     ![Screenshot](images/8.PNG)
+     ![Screenshot](images/8-2.PNG)
 
 9. Menjalankan sqlmap dengan kode dibawah ini untuk melihat daftar kolom pada tabel
 
     ```sqlmap -u “url” -T user –columns```
 
-     ![Screenshot](images/9.png)
-     ![Screenshot](images/9-2.png)
+     ![Screenshot](images/9.PNG)
+     ![Screenshot](images/9-2.PNG)
 
 10. Menjalankan sqlmap dengan kode dibawah ini untuk melihat credential data user meliputi data id_user, password, dan username
 
     ```sqlmap -u “url” -C id_user,password,username –dump```
 
-     ![Screenshot](images/10.png)
-     ![Screenshot](images/10-2.png)
+     ![Screenshot](images/10.PNG)
+     ![Screenshot](images/10-2.PNG)
 
 ### B. Mencari tahu password root menggunakan Hydra (bruteforce attack)
 
@@ -118,16 +118,16 @@ Brute force attack adalah metode peretasan yang dilakukan menggunakan cara trial
 
 2. Berikutnya mencari tahu mengenai kumpulan username dan password dan melakukan download zip atau clone [repo berikut](https://github.com/duyet/bruteforce-database) untuk mendapatkan list username dan password yang akan kita gunakan untuk bruteforce
 
-    ![Screenshot](images/11.png)
+    ![Screenshot](images/11.PNG)
 
 3. Kemudian melakukan copy paste file username.txt dan passwords.txt ke dalam folder /home/kali
 
-    ![Screenshot](images/12.png)
+    ![Screenshot](images/12.PNG)
 
 4. Selanjutnya kita jalankan command Hydra untuk memulai proses bruteforcenya dengan menggunakan ip target 192.168.1.9
 
     ```$ hydra -L username.txt -P password.txt ssh://192.168.1.9```
 
-    ![Screenshot](images/13.png)
+    ![Screenshot](images/13.PNG)
 
-    sayangnya pada step ini, proses bruteforce menggunakan Hydra belum mendapatkan hasil dengan proses sudah berjalan selama 18 jam. Mencoba password dengan besar 2 juta data dan 100 ribu data.
+    Pada proses bruteforce dengan menggunakan Hydra ini ternyata belum mendapatkan hasil yang diharapkan terlebih dengan proses yang sudah berjalan selama 18 jam. Mencoba password dengan besar 2 juta data dan 100 ribu data.
