@@ -31,11 +31,7 @@
 </p>
 <br>
 
-<div class="isiLaporan">
-
-<hr>
-
-<h3 align="center"> A06 VULNERABLE COMPONENT </h3> <br>
+# Laporan 
 
 A06 Vulnerable Component adalah salah satu dari 10 kategori utama kerentanan dalam aplikasi web yang diidentifikasi oleh Open Web Application Security Project (OWASP) Top 10. Kerentanan ini terkait dengan adanya komponen atau perangkat lunak yang rentan atau memiliki celah keamanan yang dapat dieksploitasi oleh penyerang.
 
@@ -74,4 +70,3 @@ Berikut adalah serangan vulnerable component yang dilakukan dengan Legacy Typosq
 
 7. Challenge berhasil dilakukan
    ![Screenshot](images/9.png)
-</div>
