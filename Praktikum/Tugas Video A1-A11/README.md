@@ -38,9 +38,9 @@
 3. A3 : https://youtu.be/2SKP8Wl8Ps4
 4. A4 : https://youtu.be/nO3C9sz6W6o
 5. A5 : https://youtu.be/cLKnuH8I6mo
-6. A6 :
-7. A7 :
-8. A8 :
-9. A9 :
-10. A10 :
-11. A11 :
+6. A6 : https://intip.in/TugasA06 
+7. A7 : https://intip.in/TugasA07
+8. A8 : https://intip.in/TugasA08
+9. A9 : https://intip.in/TugasA09
+10. A10 :https://intip.in/TugasA10
+11. A11 : https://intip.in/TugasA11
